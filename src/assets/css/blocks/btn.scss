@@ -1,0 +1,33 @@
+.btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin: 10px 0 18px;
+    border: none;
+    transition: background-color .2s ease-in-out;
+
+    &.bg-red {
+        background-color: $red;
+
+        &:hover {
+            background-color: darken($red, 10%);
+        }
+    }
+    &.bg-white {
+        background-color: $white;
+
+        &:hover {
+            background-color: darken($white, 20%);
+        }
+    }
+    &.shadow {
+        box-shadow: 5px 5px 10px $red;
+    }
+    
+    &.white {
+        color: $white;
+    }
+
+    &.full {
+        width: 100%;
+    }
+}

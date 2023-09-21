@@ -1,0 +1,30 @@
+.skeleton {
+    width: 62%;
+    border: 1px solid $gray;
+    border-radius: 12px;
+
+    padding: 18px;
+    margin-top: 25px;
+
+    position: relative;
+
+    @media (max-width: 1200px) {
+        width: 80%;
+    }
+}
+
+.skeleton__image {
+    width: 80%;
+}
+
+.skeleton__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}

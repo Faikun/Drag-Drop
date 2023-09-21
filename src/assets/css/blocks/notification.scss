@@ -1,0 +1,11 @@
+.notification {
+    background-color: $gray;
+    color: $white;
+    border-radius: 10px;
+    padding: 10px;
+
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

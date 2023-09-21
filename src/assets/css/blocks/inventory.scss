@@ -1,0 +1,62 @@
+.inventory {
+    width: 40%;
+    border-collapse: separate;
+    border-spacing: 0;
+    position: relative;
+
+    color: $gray;
+
+    td {
+        border: 1px solid $gray;
+        
+        width: 100px;
+        height: 100px;
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    tr:first-child {
+        td:first-child {
+            border-top-left-radius: 10px;
+        }
+        td:last-child {
+            border-top-right-radius: 10px;
+        }
+    }
+
+    tr:last-child {
+        td:first-child { 
+            border-bottom-left-radius: 10px;
+        }
+        td:last-child {
+            border-bottom-right-radius: 10px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        width: 90%;
+    }
+}
+
+.inventory__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.inventory__count {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    border: 1px solid $gray;
+    padding: 6px;
+    border-top-left-radius: 5px;
+
+    font-size: 10px;
+    line-height: 1.2;
+}
