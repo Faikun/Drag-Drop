@@ -10,8 +10,8 @@
                 <input v-if="isDelete" v-model.lazy="count" type="number" class="modal__input" placeholder="Введите количество">
                 <button v-if="!isDelete" class="btn bg-red white full" @click="isDelete = true">Удалить предмет</button>
                 <div class="modal__remove" v-else>
-                    <button class="btn bg-white mr-10" @click="isDelete = false">Отмена</button>
-                    <button class="btn bg-red white full" @click="confirm">Подтвердить</button>
+                    <button class="btn bg-white mr-10 shadow" @click="isDelete = false">Отмена</button>
+                    <button class="btn bg-red white full shadow" @click="confirm">Подтвердить</button>
                 </div>
             </div>
         </div>

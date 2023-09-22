@@ -61,12 +61,17 @@
 
 .modal__input {
     background-color: $black;
-    border: none;
+    border: 1px solid $gray;
     border-radius: 10px;
     padding: 12px;
     color: $white;
     width: 100%;
 
+    transition: border .2s ease-in;
+
+    &:focus {
+        border: 1px solid $white;
+    }
 }
 
 .modal__remove {
