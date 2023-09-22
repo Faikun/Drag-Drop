@@ -1,5 +1,7 @@
 # vue_task
 
+Ссылка на проект - https://dragdrop-faikun.web.app/
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
